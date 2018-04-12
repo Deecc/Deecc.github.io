@@ -22,16 +22,3 @@ function clearMouse(){
     look.setAttribute('src', 'img/Look-straight.svg');
 }
 
-
-// $( "#sd" ).click(function () {
-//     alert("Clicou");
-// });
-
-// $( "#il" ).click(function () {
-//     alert("Clicou");
-// });
-
-// $( "#3d" ).click(function () {
-//     alert("Clicou");
-// });
-
