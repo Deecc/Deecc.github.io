@@ -105,6 +105,11 @@ body {
     font-family: 'simplificasimplifica'   ;
 }
 
+.modal-lg {
+    width: 90vw;
+    height: 60vh;
+}
+
 .footer {
     float: left;
     width: 100%;
