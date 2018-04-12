@@ -1,5 +1,7 @@
 const look = document.getElementById('look');
 
+$('.carousel').carousel();
+
 function onQuadrant(evt){
     
         if ((evt.clientX >= 0 && evt.clientX <= (innerWidth / 3) ) && (evt.clientY >= 0 && evt.clientY <= (innerHeight / 2)) ){
