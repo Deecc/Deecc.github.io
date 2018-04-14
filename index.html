@@ -22,6 +22,13 @@
     gtag('config', 'UA-117459803-1');
     </script>
 
+    <script src="js/three.min.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+
 
 </head>
 <body>
@@ -36,29 +43,33 @@
         <div class="header">
             <h1>Decio Casagrande</h1>
             <ul>
-                <li><a data-fancybox="software" href="javascript:;" id="sdev">Software Developer</a> </li>
+                <li><a data-fancybox="software" data-type="iframe" data-src="http://camarotes.carnatal.com.br" href="javascript:;" id="sdev">Software Developer</a></li>
                 <li><img src="img/headerDot.svg"></li>
-                <li><a data-fancybox="artGallery" href="javascript:;" id="art" >Illustrator</a></li>
+                <li><a href="img/ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature" id="art" >Illustrator</a></li>
                 <li><img src="img/headerDot.svg"></li>
-                <li><a href="#" id="3d" data-toggle="modal" data-target="#3deModal">3D Enthusiast</a></li>
+                <li><a data-fancybox="3dGallery" href="javascript:;" id="3dGal">3D Enthusiast</a></li>
             </ul>
         </div>
 
         <div class="content" >            
             <div class="software">
-                    <a data-fancybox="software" data-type="iframe" data-src="https://camarotes.carnatal.com.br" href="javascript:;">
+                    <!-- <a data-fancybox="software" data-type="iframe" data-src="http://camarotes.carnatal.com.br" href="javascript:;"></a> -->
                     <a data-fancybox="software" data-type="iframe" data-src="https://deecc.github.io" href="javascript:;"></a>
                            
             </div>
 
             <div class="artGallery">
-                    <a href="img/Ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature"></a>
-                    <a href="img/Ilu/SunOfGaia.jpg" data-fancybox="artGallery" data-caption="Sun of Gaia"></a>
-                    <a href="img/Ilu/IronMonkey.jpg" data-fancybox="artGallery" data-caption="Iron Kong"></a>
-                    <a href="img/Ilu/GameAssets.png" data-fancybox="artGallery" data-caption="Random game assets"></a>
-                    <a href="img/Ilu/DemonHead.png" data-fancybox="artGallery" data-caption="Demon head"></a>
-                    <a href="img/Ilu/Vanessa.png" data-fancybox="artGallery" data-caption="Vanessa from Summoners Wars mobile game"></a>
-                    <a href="img/Ilu/EquilibriumDark.png" data-fancybox="artGallery" data-caption="Logo made for guild Equilibrium."></a>
+                    <!-- <a href="img/ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature"></a> -->
+                    <a href="img/ilu/SunOfGaia.jpg" data-fancybox="artGallery" data-caption="Sun of Gaia"></a>
+                    <a href="img/ilu/IronMonkey.jpg" data-fancybox="artGallery" data-caption="Iron Kong"></a>
+                    <a href="img/ilu/GameAssets.png" data-fancybox="artGallery" data-caption="Random game assets"></a>
+                    <a href="img/ilu/DemonHead.png" data-fancybox="artGallery" data-caption="Demon head"></a>
+                    <a href="img/ilu/Vanessa.png" data-fancybox="artGallery" data-caption="Vanessa from Summoners Wars mobile game"></a>
+                    <a href="img/ilu/EquilibriumDark.png" data-fancybox="artGallery" data-caption="Logo made for guild Equilibrium."></a>
+            </div>
+
+            <div class="3dGallery">
+                <!-- <script src="js/3dGallery.js"></script> -->
             </div>
             
         </div>
@@ -75,8 +86,7 @@
     </div>  
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/three.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.4/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
