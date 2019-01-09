@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Decio Casagrande</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117459803-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-117459803-1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-117459803-1');
+      gtag("config", "UA-117459803-1");
     </script>
 
     <script src="js/three.min.js"></script>
@@ -28,65 +33,149 @@
     <script src="js/MTLLoader.js"></script>
     <script src="js/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
+  </head>
+  <body>
+    <div
+      class="container"
+      onmousemove="onQuadrant(event)"
+      onmouseout="clearMouse()"
+    >
+      <div class="photo">
+        <img id="headTop" src="img/HeadTop.svg" alt="" />
+        <img id="look" src="img/Look-straight.svg" alt="" />
+      </div>
 
+      <div class="header">
+        <h1>Decio Casagrande</h1>
+        <ul>
+          <li>
+            <a
+              data-fancybox="software"
+              data-type="iframe"
+              data-src="https://camarotes.carnatal.com.br"
+              href="javascript:;"
+              id="sdev"
+              >Software Developer</a
+            >
+          </li>
+          <li><img src="img/headerDot.svg" /></li>
+          <li>
+            <a
+              href="img/Ilu/MagicCreature.png"
+              data-fancybox="artGallery"
+              data-caption="Magic creature"
+              id="art"
+              >Illustrator</a
+            >
+          </li>
+          <li><img src="img/headerDot.svg" /></li>
+          <li>
+            <a data-fancybox="3dGallery" href="javascript:;" id="3dGal"
+              >3D Enthusiast</a
+            >
+          </li>
+        </ul>
+      </div>
 
-</head>
-<body>
-    
-    <div class="container" onmousemove="onQuadrant(event)" onmouseout="clearMouse()"  >
-
-        <div class="photo" >
-            <img id="headTop" src="img/HeadTop.svg" alt="">
-            <img id="look" src="img/Look-straight.svg" alt="">
+      <div class="content">
+        <div class="software">
+          <!-- <a data-fancybox="software" data-type="iframe" data-src="http://camarotes.carnatal.com.br" href="javascript:;"></a> -->
+          <a
+            data-fancybox="software"
+            data-type="iframe"
+            data-src="https://deecc.github.io"
+            href="javascript:;"
+          ></a>
         </div>
-        
-        <div class="header">
-            <h1>Decio Casagrande</h1>
-            <ul>
-                <li><a data-fancybox="software" data-type="iframe" data-src="https://camarotes.carnatal.com.br" href="javascript:;" id="sdev">Software Developer</a></li>
-                <li><img src="img/headerDot.svg"></li>
-                <li><a href="img/Ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature" id="art" >Illustrator</a></li>
-                <li><img src="img/headerDot.svg"></li>
-                <li><a data-fancybox="3dGallery" href="javascript:;" id="3dGal">3D Enthusiast</a></li>
-            </ul>
+
+        <div class="artGallery">
+          <!-- <a href="img/ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature"></a> -->
+          <a
+            href="img/Ilu/SunOfGaia.jpg"
+            data-fancybox="artGallery"
+            data-caption="Sun of Gaia"
+          ></a>
+          <a
+            href="img/Ilu/VisoesDoFuturo2.png"
+            data-fancybox="artGallery"
+            data-caption="Dragon"
+          ></a>
+          <a
+            href="img/Ilu/GetGuardianChibisBoyElder.png"
+            data-fancybox="artGallery"
+            data-caption="Chibi Elder"
+          ></a>
+          <a
+            href="img/Ilu/GetGuardianChibisGirl.png"
+            data-fancybox="artGallery"
+            data-caption="Chibi Girl"
+          ></a>
+          <a
+            href="img/Ilu/GetGuardianChibisBoy.png"
+            data-fancybox="artGallery"
+            data-caption="Chibi boy"
+          ></a>
+          <a
+            href="img/Ilu/LifeIsParty.png"
+            data-fancybox="artGallery"
+            data-caption="Life is a party"
+          ></a>
+          <a
+            href="img/Ilu/rainha.png"
+            data-fancybox="artGallery"
+            data-caption="Queen"
+          ></a>
+          <a
+            href="img/Ilu/Rei.png"
+            data-fancybox="artGallery"
+            data-caption="King"
+          ></a>
+          <a
+            href="img/Ilu/Card.png"
+            data-fancybox="artGallery"
+            data-caption="King card"
+          ></a>
+          <a
+            href="img/Ilu/GameAssets.png"
+            data-fancybox="artGallery"
+            data-caption="Random game assets"
+          ></a>
+          <a
+            href="img/Ilu/DemonHead.png"
+            data-fancybox="artGallery"
+            data-caption="Demon head"
+          ></a>
+          <a
+            href="img/Ilu/Vanessa.png"
+            data-fancybox="artGallery"
+            data-caption="Vanessa from Summoners Wars mobile game"
+          ></a>
+          <a
+            href="img/Ilu/EquilibriumDark.png"
+            data-fancybox="artGallery"
+            data-caption="Logo made for guild Equilibrium."
+          ></a>
         </div>
 
-        <div class="content" >            
-            <div class="software">
-                    <!-- <a data-fancybox="software" data-type="iframe" data-src="http://camarotes.carnatal.com.br" href="javascript:;"></a> -->
-                    <a data-fancybox="software" data-type="iframe" data-src="https://deecc.github.io" href="javascript:;"></a>
-                           
-            </div>
-
-            <div class="artGallery">
-                    <!-- <a href="img/ilu/MagicCreature.png" data-fancybox="artGallery" data-caption="Magic creature"></a> -->
-                    <a href="img/Ilu/SunOfGaia.jpg" data-fancybox="artGallery" data-caption="Sun of Gaia"></a>
-                    <a href="img/Ilu/IronMonkey.jpg" data-fancybox="artGallery" data-caption="Iron Kong"></a>
-                    <a href="img/Ilu/GameAssets.png" data-fancybox="artGallery" data-caption="Random game assets"></a>
-                    <a href="img/Ilu/DemonHead.png" data-fancybox="artGallery" data-caption="Demon head"></a>
-                    <a href="img/Ilu/Vanessa.png" data-fancybox="artGallery" data-caption="Vanessa from Summoners Wars mobile game"></a>
-                    <a href="img/Ilu/EquilibriumDark.png" data-fancybox="artGallery" data-caption="Logo made for guild Equilibrium."></a>
-            </div>
-
-            <div class="3dGallery">
-                <!-- <script src="js/3dGallery.js"></script> -->
-            </div>
-            
+        <div class="3dGallery">
+          <!-- <script src="js/3dGallery.js"></script> -->
         </div>
+      </div>
 
-        <div class="footer">
-            <ul>
-                <li id="email"><a href="mailto:decio.crf@gmail.com">decio.crf@gmail.com</a></li>
-                <li id="github"><a href="http://github.com/deecc">github.com/deecc</a></li>
-            </ul>
-            
-        </div>
-
-        
-    </div>  
+      <div class="footer">
+        <ul>
+          <li id="email">
+            <a href="mailto:decio.crf@gmail.com">decio.crf@gmail.com</a>
+          </li>
+          <li id="github">
+            <a href="http://github.com/deecc">github.com/deecc</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.4/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
