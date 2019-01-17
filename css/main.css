@@ -101,11 +101,12 @@ body {
 }
 
 .about {
-  font-family: "simplificasimplifica";
+  font-family: Roboto, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .about p {
-  font-size: 45px;
+  font-size: 1.4em;
 }
 
 .modal-lg {
