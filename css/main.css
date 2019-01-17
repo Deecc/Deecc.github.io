@@ -66,11 +66,6 @@ body {
   text-decoration: none;
 }
 
-.footer ul li a:hover {
-  color: #23746d;
-  text-decoration: none;
-}
-
 .header ul li img {
   width: 0.5em;
   height: 0.5em;
@@ -100,10 +95,13 @@ body {
   font-family: "simplificasimplifica";
 }
 
+.about {
+  font-family: "simplificasimplifica";
+}
+
 .modal-lg {
   width: 90vw;
-  height: 70vh;
-  font-family: "simplificasimplifica";
+  height: 60vh;
 }
 
 .footer {
