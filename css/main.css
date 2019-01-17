@@ -102,7 +102,10 @@ body {
 
 .about {
   font-family: "simplificasimplifica";
-  font-size: 2em;
+}
+
+.about p {
+  font-size: 15px;
 }
 
 .modal-lg {
