@@ -72,6 +72,11 @@ body {
   margin-bottom: 7px;
 }
 
+.footer ul li a:hover {
+  color: #23746d;
+  text-decoration: none;
+}
+
 .photo {
   position: absolute;
   float: left;
