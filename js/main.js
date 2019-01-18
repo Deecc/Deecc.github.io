@@ -95,22 +95,22 @@ $('#3dGal').click( function () {
 function onQuadrant(evt){
     
         if ((evt.clientX >= 0 && evt.clientX <= (innerWidth / 3) ) && (evt.clientY >= 0 && evt.clientY <= (innerHeight / 2)) ){
-            look.setAttribute('src', 'img/Look-left.svg');
+            look.setAttribute('src', 'img/look-up-left.png');
         } else if ((evt.clientX >= (innerWidth / 3 + 1) && evt.clientX <= ((innerWidth / 3 ) * 2) ) && (evt.clientY >= 0 && evt.clientY <= (innerHeight / 2))) {
-            look.setAttribute('src', 'img/Look-straight.svg');
+            look.setAttribute('src', 'img/look-straight.png');
         } else if ((evt.clientX >= ((innerWidth / 3) * 2 + 1) && evt.clientX <= innerWidth ) && (evt.clientY >= 0 && evt.clientY <= (innerHeight / 2))) {
-            look.setAttribute('src', 'img/Look-up-right.svg');
+            look.setAttribute('src', 'img/look-up-right.png');
         } else if ((evt.clientX >= 0 && evt.clientX <= (innerWidth / 3) ) && (evt.clientY >= (innerHeight / 2 + 1) && evt.clientY <= innerHeight ) ) {
-            look.setAttribute('src', 'img/Look-up-left.svg');
+            look.setAttribute('src', 'img/look-left.png');
         } else if ((evt.clientX >= ((innerWidth / 3) * 2 + 1) && evt.clientX <= innerWidth ) && (evt.clientY >= (innerHeight / 2 + 1) && evt.clientY <= innerHeight )) {
-            look.setAttribute('src', 'img/Look-right.svg');
+            look.setAttribute('src', 'img/look-right.png');
         } else {
-            look.setAttribute('src', 'img/Look-straight.svg');
+            look.setAttribute('src', 'img/look-straight.png');
         }
     
 }
 
 function clearMouse(){
-    look.setAttribute('src', 'img/Look-straight.svg');
+    look.setAttribute('src', 'img/look-straight.png');
 }
 

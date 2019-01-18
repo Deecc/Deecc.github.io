@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 
@@ -36,16 +35,15 @@
   </head>
   <body>
     <div
-      class="container"
+      class="container-fluid"
       onmousemove="onQuadrant(event)"
       onmouseout="clearMouse()"
     >
-      <div class="photo">
-        <img id="headTop" src="img/HeadTop.svg" alt="" />
-        <img id="look" src="img/Look-straight.svg" alt="" />
+      <div class="img-fluid photo">
+        <img id="look" src="img/look-straight.png" alt="" />
       </div>
 
-      <div class="header">
+      <div class="header sticky-top">
         <h1>Decio Ramuski</h1>
         <ul>
           <li>
@@ -79,7 +77,7 @@
               >Illustrator</a
             >
           </li>
-
+          <!--
           <li><img src="img/headerDot.svg" /></li>
           <li>
             <a
@@ -89,28 +87,37 @@
               id="3dGal"
               >3D Enthusiast</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <div class="content">
         <div style="display: none;" id="about-decio" class="about">
-          <h2>Who am I?</h2>
-          <h4>
-            Let me start by saying Welcome to my page, I hope you find what you
-            are looking for here.
+          <h2 id="about-text-header">Who am I?</h2>
+          <h4 id="about-text-header1">
+            Let me start by saying welcome to my page!
+          </h4>
+          <h4 id="about-text-header2">
+            I hope you find what you are looking for here.
           </h4>
           <p>
             I am a creative Software Developer professional with work experience
             in health and digital media fields involved in all phases of
-            software development life cycle.For the last 3 years I've been
+            software development life cycle. For the last 3 years I've been
             analysing, developing and implementing web applications, mobile
-            applications, websites and most recently REST API's. Prior to
-            development I've worked as DevOps/Network Admin using technologies
-            such as AWS EC2, S3, Mesos, Marathon, Docker, Active Directory,
-            DHCP, Symantec NetBackup, WSUS, among others.
+            applications, websites and most recently REST API's adopting cascade
+            and agile methodologies to build and create products and services
+            using technologies such as Laravel, Ionic, Java, Javascript,
+            AngularJS, C#, Objective-C, Ruby on Rails, and on-going learning of
+            React and React-Native.
           </p>
-
+          <p>
+            Prior to development I've worked as DevOps and Network Administrator
+            using technologies such as AWS EC2, S3, Mesos, Marathon, Docker,
+            Active Directory, DHCP, Symantec NetBackup, WSUS, among others. As
+            2nd level support for my team I was responsible for configuration
+            and maintenance of the services and network.
+          </p>
           <p>
             I am passionate about all kinds of technologies, and the challenges
             that it implies, especially the fast pace evolution and innovation.
@@ -208,7 +215,7 @@
         </div>
       </div>
 
-      <div class="footer">
+      <div class="footer fixed-bottom">
         <ul>
           <li id="email">
             <a href="mailto:decio.crf@gmail.com">decio.crf@gmail.com</a>
@@ -220,8 +227,8 @@
       </div>
     </div>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.4/jquery.fancybox.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
