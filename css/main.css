@@ -34,7 +34,7 @@ body {
 img {
   width: 38%;
   height: auto;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .header {
@@ -80,20 +80,13 @@ img {
   position: absolute;
   object-fit: contain;
   float: left;
-  z-index: -1;
+  z-index: 1000;
   top: calc(100vh / 4);
   left: calc(100vw / 2.8);
   margin-left: calc(100vw / 6.5);
   margin-top: calc(68vh / 5);
   margin-top: 0px;
   margin-left: 0px;
-
-  /* 
-   
-  
-
-  
-  */
 }
 
 .content {
@@ -109,15 +102,18 @@ img {
 
 .about h2 {
   font-style: initial;
-  font-family: "simplificasimplifica";
+  font-family: "simplificasimplifica", Roboto, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .about h4 {
-  font-family: "simplificasimplifica";
+  font-family: "simplificasimplifica", Roboto, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .about p {
-  font-family: "simplificasimplifica";
+  font-family: "simplificasimplifica", Roboto, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5em;
 }
 
@@ -178,6 +174,11 @@ img {
   float: left;
   padding-top: 3vh;
   padding-left: 1%;
+}
+
+#bitbucket {
+  padding-right: 1%;
+  float: right;
 }
 
 #github {
